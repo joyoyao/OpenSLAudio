@@ -20,7 +20,7 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
             + File.separator + "11.mp3";
 
     static {
-        System.loadLibrary("recorder2-lib");
+        System.loadLibrary("recorder-lib");
     }
     private boolean mRecording;
     @Override
