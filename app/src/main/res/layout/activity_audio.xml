@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uri_soundtrack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI初始化" />
+
+        <Button
+            android:id="@+id/pause_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI暂停" />
+
+        <Button
+            android:id="@+id/play_uri"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI播放" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uri_mute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI静音" />
+
+        <Button
+            android:id="@+id/uri_unmute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI恢复静音" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uri_solo_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI左独唱" />
+
+        <Button
+            android:id="@+id/uri_solo_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="URI右独唱" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uri_mute_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="左边静音" />
+
+        <Button
+            android:id="@+id/uri_mute_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="右边静音" />
+        <Button
+            android:id="@+id/uri_get_channel_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="声道数量" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/volume_uri"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

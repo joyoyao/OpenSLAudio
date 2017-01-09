@@ -9,16 +9,16 @@ cmake_minimum_required(VERSION 3.4.1)
 # You can define multiple libraries, and CMake builds it for you.
 # Gradle automatically packages shared libraries with your APK.
 
-add_library( # Sets the name of the library.
-             recorder-lib
+#add_library( # Sets the name of the library.
+#             recorder-lib
+#             SHARED
+#           src/main/cpp/com_abcew_audio_RecordActivity.cpp
 
-             # Sets the library as a shared library.
+ #src/main/cpp/com_abcew_audio_AudioActivity.cpp)
+add_library(recorder-lib
              SHARED
-
-             # Provides a relative path to your source file(s).
-             # Associated headers in the same location as their source
-             # file are automatically included.
-             src/main/cpp/com_abcew_audio_RecordActivity.cpp )
+            src/main/cpp/com_abcew_audio_AudioActivity.cpp
+            src/main/cpp/com_abcew_audio_RecordActivity.cpp)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because system libraries are included in the search path by
@@ -38,9 +38,11 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
+                     #  recorder-lib
                        recorder-lib
                        android
                         OpenSLES
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
+

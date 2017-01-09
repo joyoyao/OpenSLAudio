@@ -14,38 +14,41 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+
+namespace ARecoder {
 /*
  * Class:     com_abcew_audio_RecordActivity
  * Method:    createEngine
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_createEngine
-  (JNIEnv *, jobject);
+    JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_createEngine
+            (JNIEnv *, jobject);
 
 /*
  * Class:     com_abcew_audio_RecordActivity
  * Method:    createAudioRecord
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_createAudioRecord
-  (JNIEnv *, jobject, jstring);
+    JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_createAudioRecord
+            (JNIEnv *, jobject, jstring);
 
 /*
  * Class:     com_abcew_audio_RecordActivity
  * Method:    stop
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_stop
-  (JNIEnv *, jobject);
+    JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_stop
+            (JNIEnv *, jobject);
 
 /*
  * Class:     com_abcew_audio_RecordActivity
  * Method:    shutdown
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_shutdown
-  (JNIEnv *, jobject);
-
+    JNIEXPORT void JNICALL Java_com_abcew_audio_RecordActivity_shutdown
+            (JNIEnv *, jobject);
+}
 #ifdef __cplusplus
 }
 #endif
